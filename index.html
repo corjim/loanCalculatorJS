@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+    <meta charset="utf-8">
+    <title>Load Calculator</title>
+   
+    <link rel="stylesheet" href="loanCalc.css">
+  </head>
+  <body>
+    
+    <section class="loan-calc">
+                <!-- Mark up for loan Input -->
+       <div class="basic-container">
+            <h1>Loan Calculator</h1>
+        
+            <form action="#">
+            <div class="group">
+                <div class="title">Loan Budget</div>
+                <input type="text" name="loan" class="loan-amount" value="2000" placeholder="Amount of loan">
+            </div>
+
+            <div class="group">
+                <div class="title">Interest Rate</div>
+                <input type="text" name="interest-rate" class="intrest-rt" value="2.7" placeholder="Loan interest">
+            </div>
+
+            <div class="group">
+                <div class="title" >loan-period</div>
+                <input type="text" name="period" class="loan-period" value="120" placeholder="Period of loan in months">
+            </div>
+            </form>
+        
+        </div>
+        <!-- Mark up for loan results -->
+        <div class="output">
+            <div class="left">
+
+                <div class="monthly-pay">
+                  <h3>Monthly Payment</h3> 
+                </div>
+
+                <div class="full-loan">
+                  <h3>Total Loan Interest</h3> 
+                </div>
+            </div>
+                    <!-- The submit button -->
+            <input type="submit" value="Calculate"    class="calc-btn"> 
+        </div>
+
+        <!-- disregard, markup for chart display -->
+        <!-- <div id="loan-chart">
+            <div>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div> -->
+        
+    </section>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine-html.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/boot.js"></script> 
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="loanCalc.js"></script>
+    <script src="loanCalc.test.js"></script>
+</body>
+</html>
